@@ -1,0 +1,12 @@
+{
+  "name": "mssqlgenericapi",
+  "description": "Microsoft SQL Server Generic API",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Michael Johannessen",
+  "dependencies":{
+    "express": "^4.16.3",
+    "body-parser": "^1.15.2",
+    "mssql": "^4.1.0"
+  }
+}
