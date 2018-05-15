@@ -68,7 +68,12 @@ app.post('/api/:schema/:table', (req, res, next) => {
         {
             var request = new sql.Request();
 
-            request.query("SELECT * FROM [" + req.params.schema + "].[" + req.params.table + "] " + req.body.filter, function (err, recordset)
+            var filter = "";
+            if( req.body.filter ){
+                filter = req.body.filter;
+            }
+
+            request.query("SELECT * FROM [" + req.params.schema + "].[" + req.params.table + "] " + filter, function (err, recordset)
             {
                 if (err)
                 {
@@ -115,7 +120,7 @@ app.get('/api/:schema/:table/:column/:filter', function (req, res)
     });
 });
 
-app.post('/api/sproc/:schema/:table', (req, res, next) => {
+app.post('/api/sproc/:schema/:sproc', (req, res, next) => {
     sql.connect(sqlConfig, function (err)
     {
         if (err)
@@ -127,7 +132,12 @@ app.post('/api/sproc/:schema/:table', (req, res, next) => {
         {
             var request = new sql.Request();
 
-            request.query("[" + req.params.schema + "].[" + req.params.table + "] " + req.body.params, function (err, recordset)
+            var params = "";
+            if( req.body.params ){
+                params = req.body.params;
+            }
+
+            request.query("[" + req.params.schema + "].[" + req.params.sproc + "] " + params, function (err, recordset)
             {
                 if (err)
                 {

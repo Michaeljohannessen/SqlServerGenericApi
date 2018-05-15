@@ -33,14 +33,14 @@ application/json
 
 `GET yourservername:8000/api/dbo/customer/name/yourcustomername`
 
+**Execute Stored Procedure with Optional Params** (api/sproc/schema/sproc)
 
+```
+POST yourservername:8000/api/sproc/dbo/sprocname
 
-**Execute Stored Procedure** (api/schema/table/column/filter)
-
-`GET yourservername:8000/api/dbo/customer/customerid/1`
-
-
-
+application/json
+{"params": "'param1', 'params2'"}
+```
 
 ## Whats Next?
 Through my career in the it-industry I have meet customers who needed to share information in a simple and standardized way, and therefore I decided to start this project to see if there might be any interest in it.
