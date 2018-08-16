@@ -45,4 +45,4 @@ application/json
 ## Whats Next?
 Through my career in the it-industry I have meet customers who needed to share information in a simple and standardized way, and therefore I decided to start this project to see if there might be any interest in it.
 
-The project is quite small in it's current state, but if you want to contribute to the solution or have any request or ideas for improvements, feel free to contact me at Michaeljohannessen@outlook.com. 
+The project is quite small in it's current state, but if you want to contribute to the solution or have any request or ideas for improvements, feel free to contact me at mjo@pro-solution.dk or visit our homepage http://pro-solution.dk. 
