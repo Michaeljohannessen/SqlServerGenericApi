@@ -1,4 +1,4 @@
-# MSSQL Generic API
+# Microsoft SQL Server Generic API
 The repository contains a simple server-component build in Node.js. The purpose of the component is to create a dynamic HTTP-based API upon an existing Microsoft SQL Server Database. 
 
 ## Requirements
